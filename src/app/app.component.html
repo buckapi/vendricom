@@ -1,0 +1,12 @@
+<app-header></app-header>
+
+<app-floaty></app-floaty>
+<app-small-navigation></app-small-navigation>
+
+<app-navigation-widget></app-navigation-widget>
+<app-navigation-mobile></app-navigation-mobile>
+<app-chat-widget></app-chat-widget>
+
+<div class="content-grid">
+  <app-user-home [hidden]="virtualRouter.routerActive!=='user-home'"></app-user-home>
+</div>

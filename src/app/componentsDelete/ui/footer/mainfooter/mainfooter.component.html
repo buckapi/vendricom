@@ -1,0 +1,36 @@
+<div class="navbar-menu " [hidden]="global.device!=='Mobile' || virtualRouter.routerActive=='login'|| virtualRouter.routerActive=='add-order'">
+    <ul>     
+      <li class="active">
+        <a (click)="global.setRoute('home')">
+          <div class="icon">
+            <i class="home" data-feather="home"></i>
+                </div>
+          <h5 class="active">Home</h5>
+        </a>
+      </li> 
+      <li class="">
+        <a (click)="global.setRoute('home')">
+          <div class="icon">
+            <i class="inbox" data-feather="inbox"></i>
+                </div>
+          <h5 class="active">Pagsos</h5>
+        </a>
+      </li>  
+      <li>
+        <a (click)="global.setRoute('ranking')">
+          <div class="icon">
+            <i class="message-square" data-feather="message-square"></i>
+             </div>
+          <h5 >Mensajería</h5>
+        </a>
+      </li>
+      <li>
+        <a (click)="global.setRoute('add-order')">
+          <div class="icon">
+              <i class="pen-tool" data-feather="pen-tool"></i>
+             </div>
+          <h5>Solicitudes</h5>
+        </a>
+      </li>
+    </ul>
+  </div>

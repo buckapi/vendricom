@@ -1,0 +1,61 @@
+<div class="offcanvas sidebar-offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" style="width: 70%;">
+    <div class="offcanvas-header sidebar-header">
+      <div class="sidebar-logo">
+        <img class="img-fluid logo" src="assets/mpay/images/person/p2.png" style="border-radius: 15px;" alt="logo" />
+      </div>
+      <div class="balance" *ngIf="global.ClientFicha()!==undefined && global.ClientFicha() !== null">
+        <img class="img-fluid balance-bg" src="assets/mpay/images/background/auth-bg.jpg" alt="auth-bg" />
+        <h5>Jacob Uzcategui</h5>
+        <h2 >Colaborador</h2>
+      </div>
+    </div>
+    <div class="offcanvas-body">
+      <div class="sidebar-content">
+        <ul class="link-section">
+          <li>
+            <a  class="pages pointer" (click)="global.setRoute('bhome')">
+              <i class="sidebar-icon" data-feather="home"></i>
+              <h3>Home </h3>
+            </a>
+          </li>
+          <li>
+            <a  class="pages pointer" (click)="global.setRoute('home')">
+              <i class="sidebar-icon" data-feather="inbox"></i>
+              <h3>Pagos</h3>
+            </a>
+          </li>
+          <li>
+            <a  class="pages pointer"  (click)="global.setRoute('ranking')">
+              <i class="sidebar-icon" data-feather="pen-tool"></i>
+               <h3>Solicitudes</h3>
+            </a>
+          </li>
+          <li>
+            <a  class="pages pointer"  (click)="global.setRoute('ranking')">
+              <i class="sidebar-icon" data-feather="message-square"></i>
+               <h3>Mesajería</h3>
+            </a>
+          </li>
+        
+        
+
+          <li>
+            <a (click)="global.signOut()" class="pages pointer" >
+              <i class="sidebar-icon" data-feather="log-out"></i>
+              <h3>Salir</h3>
+            </a>
+          </li>
+        </ul>
+        <div class="mode-switch">
+          <ul class="switch-section">
+            <li>
+              <h3>Modo oscuro</h3>
+              <div class="switch-btn">
+                <input id="dark-switch" type="checkbox" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
